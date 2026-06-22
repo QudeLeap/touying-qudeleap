@@ -20,6 +20,16 @@ For local development, compile the bundled example:
 $ typst compile ./examples/main.typ --root .
 ```
 
+## Brand Palette
+
+The default theme palette is sampled from the QudeLeap logo:
+
+- `#7544f3` — primary violet
+- `#4030e0` — electric indigo accent
+- `#041550` — deep logo navy
+- `#0f172a` — readable dark navy
+- `#fbfaff` — warm light slide background
+
 ## Examples
 
 See [examples](examples) and [GitHub Pages](https://exaclior.github.io/touying-qudeleap) for more details.
