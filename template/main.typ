@@ -1,23 +1,23 @@
 #import "@preview/touying:0.6.1": *
-#import "@preview/touying-simpl-hkustgz:0.1.2": *
+#import "@preview/touying-qudeleap:0.1.0": *
 
 // Specify `lang` and `font` for the theme if needed.
-#show: hkustgz-theme.with(
+#show: qudeleap-theme.with(
   // lang: "zh",
   // font: (
   //   (
-  //     name: "Linux Libertine",
+  //     name: "Libertinus Serif",
   //     covers: "latin-in-cjk",
   //   ),
   //   "Source Han Sans SC",
   //   "Source Han Sans",
   // ),
   config-info(
-    title: [Touying for HKUST(GZ): Customize Your Slide Title Here],
+    title: [Touying for QudeLeap: Customize Your Slide Title Here],
     subtitle: [Customize Your Slide Subtitle Here],
-    author: [Yusheng Zhao],
+    author: [Your Name],
     date: datetime.today(),
-    institution: [HKUST(GZ)],
+    institution: [QudeLeap],
   ),
 )
 

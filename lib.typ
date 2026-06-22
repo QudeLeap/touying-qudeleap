@@ -1,12 +1,12 @@
-// University theme - modified to fit HKUST GZ
+// QudeLeap slide theme for Touying.
 // Inspired by https://github.com/Coekjan/touying-buaa
 #import "@preview/touying:0.6.1": *
 #import themes.stargazer: *
 
-#let hkustgz-theme(
+#let qudeleap-theme(
   aspect-ratio: "16-9",
   lang: "en",
-  font: ("Linux Libertine",),
+  font: ("Libertinus Serif",),
   ..args,
   body,
 ) = {
@@ -22,7 +22,7 @@
   show: stargazer-theme.with(
     aspect-ratio: aspect-ratio,
     config-info(
-      logo: image("assets/vi/hkustgz-logo.svg"),
+      logo: image("assets/vi/qudeleap-logo.svg"),
     ),
     ..args,
   )

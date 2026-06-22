@@ -7,7 +7,7 @@
 #let cetz-canvas = touying-reducer.with(reduce: cetz.canvas, cover: cetz.draw.hide.with(bounds: true))
 #let fletcher-diagram = touying-reducer.with(reduce: fletcher.diagram, cover: fletcher.hide)
 
-#show: hkustgz-theme.with(
+#show: qudeleap-theme.with(
   // Lang and font configuration
   lang: "zh",
   font: (
@@ -20,11 +20,11 @@
 
   // Basic information
   config-info(
-    title: [Typst Slide Theme for HKUST(Guangzhou) Based on Touying],
-    subtitle: [基于 Touying 的香港科技大学（广州） Typst 幻灯片模板],
+    title: [Typst Slide Theme for QudeLeap Based on Touying],
+    subtitle: [QudeLeap Typst slide template based on Touying],
     author: [Yusheng Zhao],
     date: datetime.today(),
-    institution: [香港科技大学（广州）],
+    institution: [QudeLeap],
   ),
 
   // Pdfpc configuration
@@ -245,9 +245,9 @@
 #slide[
   - 您可以使用：
     ```sh
-    typst init @preview/touying-simpl-hkustgz
+    typst init @preview/touying-qudeleap
     ```
     来创建基于本模板的演示文稿项目。
 
-  - 本模板仓库位于 #link("https://github.com/exaclior/touying-simpl-hkustgz")，欢迎关注与贡献。
+  - 本模板仓库位于 #link("https://github.com/exAClior/touying-qudeleap")，欢迎关注与贡献。
 ]

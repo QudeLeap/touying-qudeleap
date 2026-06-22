@@ -1,30 +1,28 @@
-# Touying Slide Theme for HKUST GZ 
+# Touying Slide Theme for QudeLeap
 
-Inspired by [Touying Slide Theme for Beihang University](https://github.com/Coekjan/touying-buaa)
+A QudeLeap Typst presentation template built on [Touying](https://github.com/touying-typ/touying), based on the structure of [`touying-simpl-hkustgz`](https://github.com/exAClior/touying-simpl-hkustgz).
 
 ## Use as Typst Template Package
 
-Use `typst init @preview/touying-simpl-hkustgz` to create a new project with this theme.
+After publication to Typst Preview, use `typst init @preview/touying-qudeleap` to create a new project with this theme.
 
 ```console
-$ typst init @preview/touying-simpl-hkustgz
-Successfully created new project from @preview/touying-simpl-hkustgz:<latest>
+$ typst init @preview/touying-qudeleap
+Successfully created new project from @preview/touying-qudeleap:<latest>
 To start writing, run:
-> cd touying-simpl-hkustgz
+> cd touying-qudeleap
 > typst watch main.typ
 ```
 
-## Examples
-
-See [examples](examples) and [Github Pages](https://exaclior.github.io/touying-simpl-hkustgz) for more details.
-
-You can compile the examples by yourself.
+For local development, compile the bundled example:
 
 ```console
 $ typst compile ./examples/main.typ --root .
 ```
 
-And the PDF file `./examples/main.pdf` will be generated.
+## Examples
+
+See [examples](examples) and [GitHub Pages](https://exaclior.github.io/touying-qudeleap) for more details.
 
 ## License
 
