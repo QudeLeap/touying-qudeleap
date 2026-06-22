@@ -32,7 +32,7 @@ The default theme palette is sampled from the QudeLeap logo:
 
 ## Examples
 
-See [examples](examples) and [GitHub Pages](https://exaclior.github.io/touying-qudeleap) for more details.
+See [examples](examples) and [GitHub Pages](https://qudeleap.github.io/touying-qudeleap) for more details.
 
 ## License
 

@@ -249,5 +249,5 @@
     ```
     来创建基于本模板的演示文稿项目。
 
-  - 本模板仓库位于 #link("https://github.com/exAClior/touying-qudeleap")，欢迎关注与贡献。
+  - 本模板仓库位于 #link("https://github.com/QudeLeap/touying-qudeleap")，欢迎关注与贡献。
 ]
