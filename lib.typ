@@ -10,7 +10,7 @@
 #let qude-paper = rgb("#fbfaff")
 #let qude-slate = rgb("#64748b")
 
-#let qude-header-logo = image("assets/vi/qude-logo-horizontal.png", width: 5.7cm)
+#let qude-header-logo = image("assets/vi/qude-logo-horizontal.png", width: 4.56cm)
 
 #let qude-navigation(self) = context {
   let body() = {
