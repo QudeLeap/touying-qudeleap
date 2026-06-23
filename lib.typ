@@ -10,6 +10,44 @@
 #let qude-paper = rgb("#fbfaff")
 #let qude-slate = rgb("#64748b")
 
+#let qude-header-logo = image("assets/vi/qude-logo-horizontal.png", width: 5.7cm)
+
+#let qude-navigation(self) = context {
+  let body() = {
+    let sections = query(heading.where(level: 1))
+    if sections.len() == 0 {
+      return
+    }
+    let current-page = here().page()
+    set text(size: 0.5em)
+    for (section, next-section) in sections.zip(sections.slice(1) + (none,)) {
+      set text(fill: if section.location().page() <= current-page and (
+        next-section == none or current-page < next-section.location().page()
+      ) {
+        self.colors.primary
+      } else {
+        self.colors.neutral
+      })
+      box(inset: 0.5em)[#link(section.location(), utils.short-heading(self: self, section))<touying-link>]
+    }
+  }
+
+  block(
+    fill: self.colors.neutral-lightest,
+    inset: 0pt,
+    outset: 0pt,
+    block(
+      fill: self.colors.neutral-lightest,
+      width: 100%,
+      height: 2.3em,
+      {
+        place(center + horizon, body())
+        place(right + horizon, dx: -0.2em, utils.call-or-display(self, self.store.header-right))
+      },
+    ),
+  )
+}
+
 #let qudeleap-theme(
   aspect-ratio: "16-9",
   lang: "en",
@@ -45,16 +83,10 @@
     ),
     config-page(fill: qude-paper),
     config-info(
-      logo: image("assets/vi/qude-logo-transparent.png", height: 1.15em),
+      logo: qude-header-logo,
     ),
     config-store(
-      navigation: self => components.simple-navigation(
-        self: self,
-        primary: self.colors.primary,
-        secondary: self.colors.neutral,
-        background: self.colors.neutral-lightest,
-        logo: utils.call-or-display(self, self.store.header-right),
-      ),
+      navigation: qude-navigation,
     ),
     ..args,
   )
